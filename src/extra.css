@@ -171,3 +171,32 @@ body.fly-lock{overflow:hidden}
 .team .lilink:hover{color:var(--sun-orange)}
 .team .lilink .li{flex:none;border-radius:3px;box-shadow:0 0 0 1px rgba(252,248,234,.25)}
 }
+.logo-plate img{height:56px}
+.hg-open{position:relative}
+.hg-open .tip{position:absolute;left:0;right:-8px;top:calc(100% + 10px);z-index:20;background:var(--linen);color:var(--sun-blue);font-style:normal;font-size:13px;line-height:1.5;padding:12px 14px;border-radius:8px;box-shadow:0 14px 30px rgba(0,30,40,.45);opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity .15s,transform .15s}
+.hg-open .tip::before{content:"";position:absolute;top:-6px;left:22px;border:6px solid transparent;border-top:0;border-bottom-color:var(--linen)}
+.hg-open .tip u{display:block;margin-top:8px;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--sun-orange);text-decoration:none}
+.hg-open:hover .tip,.hg-open:focus-visible .tip{opacity:1;transform:translateY(0)}
+.pcard:has(.hg-open:hover){z-index:5}
+@media(hover:none){.hg-open .tip{display:none}}
+.fly-drawer.single .fd-nav{display:none}
+.fly-drawer .hg-head{margin-top:4px}
+.fly-drawer .hg-head h3{font-size:28px;margin:4px 0 4px}
+.fly-drawer .hg-grid{margin:4px 0 14px}
+/* Header, two rows: row 1 logo + Book a Call + burger; row 2 horizontal menu bar */
+nav .wrap{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;align-items:center;height:auto;gap:0 16px;padding-top:12px;padding-bottom:0}
+nav .logo{grid-column:1;grid-row:1}
+nav .logo img{height:26px}
+nav .wrap>div{grid-column:2;grid-row:1}
+nav ul{grid-column:1 / -1;grid-row:2;display:flex;justify-content:flex-start;gap:clamp(14px,2vw,30px);border-top:1px solid var(--border-inverse);margin-top:12px;padding:11px 0 12px}
+nav ul a{font-size:14px;white-space:nowrap}
+section{scroll-margin-top:124px}
+@media(min-width:1000px){.fly-img{top:120px}}
+@media(max-width:1099px){
+  nav ul{display:none;position:absolute;left:0;right:0;top:100%;grid-column:auto;grid-row:auto;flex-direction:column;gap:0;border-top:0;margin-top:0;padding:8px var(--gutter) 16px}
+  nav ul.open{display:flex}
+  nav .wrap{grid-template-rows:auto;padding-bottom:12px}
+  .menu{display:block}
+  section{scroll-margin-top:80px}
+}
+@media(max-width:699px){nav .cta{display:none}}
