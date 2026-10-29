@@ -217,3 +217,34 @@ section{scroll-margin-top:124px}
   nav ul.open a{display:block;padding:12px 0;font-size:16px;border-bottom:1px solid var(--border-inverse)}
   section{scroll-margin-top:118px}
 }
+/* Pathway cards: drawer openers, neon YouTube box, EnergyTag tile */
+.pd-open{position:relative;background:none;border:0;padding:0;margin:0;cursor:pointer;text-align:left;font-family:inherit;color:var(--linen);display:flex;align-items:center;gap:12px}
+.pd-open>span{display:flex;flex-direction:column}
+.pd-open b{font-size:21px;font-weight:600;line-height:1.2}
+.pd-open small{font-size:12px;color:var(--sun-orange);font-weight:600;letter-spacing:.02em}
+.pd-open:hover b{color:var(--sun-orange)}
+.pd-open .tip{position:absolute;left:0;right:-8px;top:calc(100% + 10px);z-index:20;background:var(--linen);color:var(--sun-blue);font-style:normal;font-size:13px;line-height:1.5;padding:12px 14px;border-radius:8px;box-shadow:0 14px 30px rgba(0,30,40,.45);opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity .15s,transform .15s}
+.pd-open .tip::before{content:"";position:absolute;top:-6px;left:22px;border:6px solid transparent;border-top:0;border-bottom-color:var(--linen)}
+.pd-open .tip u{display:block;margin-top:8px;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--sun-orange);text-decoration:none}
+.pd-open:hover .tip,.pd-open:focus-visible .tip{opacity:1;transform:translateY(0)}
+.pcard:has(.pd-open:hover){z-index:5}
+.hg-cta .tip,.btn.pd-open .tip{display:none}
+.thumb.neon{box-shadow:0 0 0 2px var(--green-pop),0 0 16px rgba(215,253,0,.6);border-radius:8px}
+.thumb.neon:hover{box-shadow:0 0 0 2px var(--green-pop),0 0 24px rgba(215,253,0,.85)}
+.tile{display:flex;align-items:center;gap:12px;background:#fff;border:0;border-radius:8px;padding:8px 12px;cursor:pointer;font-family:inherit;width:fit-content;max-width:100%;position:relative;box-shadow:0 0 0 1px rgba(252,248,234,.2)}
+.tile img{height:34px;width:auto;display:block}
+.tile>span{font-size:12px;font-weight:700;color:var(--sun-blue);letter-spacing:.02em}
+.tile:hover{box-shadow:0 0 0 2px var(--green-pop),0 0 14px rgba(215,253,0,.55)}
+.tile .tip{position:absolute;left:0;right:-40px;top:calc(100% + 10px);z-index:20;background:var(--linen);color:var(--sun-blue);font-style:normal;font-size:13px;line-height:1.5;padding:12px 14px;border-radius:8px;box-shadow:0 14px 30px rgba(0,30,40,.45);opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity .15s,transform .15s;text-align:left;font-weight:400}
+.tile .tip u{display:block;margin-top:8px;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--sun-orange);text-decoration:none}
+.tile:hover .tip,.tile:focus-visible .tip{opacity:1;transform:translateY(0)}
+@media(hover:none){.pd-open .tip,.tile .tip{display:none}}
+.fd-logo{height:44px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;flex:none}
+.fd-logo.sm{height:56px}
+.fd-plate{padding:8px 12px;flex:none}
+.fd-plate img{height:40px}
+.fd-thumb{margin:0 0 14px;display:block}
+.fd-trl{margin:0 0 10px}
+.fly-drawer .hg-head p{margin:0;font-size:14px;line-height:1.5}
+.fly-drawer .hg-head img.fd-logo{border-radius:8px;background:#fff;height:44px;width:auto;padding:6px 10px}
+.fly-drawer .hg-head img.fd-logo.sm{height:60px;padding:6px}
