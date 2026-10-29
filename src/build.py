@@ -10,10 +10,14 @@ head='''<!doctype html>
 <meta property="og:description" content="Creating a global green energy data standard. Finalist, True Zero Global Prize 2026.">
 <meta property="og:image" content="media/poster.jpg">
 <meta name="theme-color" content="#003E52">
+<meta name="build-stamp" content="{{STAMP}}">
 <style>
 '''
 css=open('base.css',encoding='utf-8').read()+open('extra.css',encoding='utf-8').read()
 body=open('body.html',encoding='utf-8').read()
+import datetime
+STAMP=datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
+head=head.replace('{{STAMP}}',STAMP)
 t=head+css+'</style>\n</head>\n'+body
 b=lambda p:base64.b64encode(open(p,'rb').read()).decode()
 for k,v in {'{{FONT_R}}':b('build/Inter-Regular.woff2'),'{{FONT_M}}':b('build/Inter-Medium.woff2'),'{{FONT_S}}':b('build/Inter-SemiBold.woff2'),'{{WORDMARK}}':b('build/wordmark.png'),'{{CHIP}}':b('build/chip.jpg'),'{{BADGE}}':b('build/badge.png')}.items(): t=t.replace(k,v)

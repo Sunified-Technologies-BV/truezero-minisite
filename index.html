@@ -461,6 +461,16 @@ section{scroll-margin-top:124px}
 .hg-short{font-size:14px;line-height:1.5;color:rgba(252,248,234,.8);margin:0}
 .hg-cta{align-self:flex-start;font-size:14px;padding:10px 14px;cursor:pointer;border:0;font-family:inherit}
 .hg-cta .tip{display:none}
+/* Menu row visible at every width: horizontal scroll row under the logo; burger switches it to the vertical list */
+@media(max-width:1099px){
+  nav .wrap{grid-template-rows:auto auto;padding-bottom:0}
+  nav ul{display:flex;position:static;grid-column:1 / -1;grid-row:2;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:18px;border-top:1px solid var(--border-inverse);margin-top:10px;padding:10px 0 11px}
+  nav ul::-webkit-scrollbar{display:none}
+  nav ul a{display:inline;padding:0;font-size:14px;border-bottom:0;white-space:nowrap}
+  nav ul.open{display:flex;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;overflow:visible;border-top:0;margin-top:0;padding:8px var(--gutter) 16px;background:var(--bg-inverse-2);border-bottom:1px solid var(--border-inverse)}
+  nav ul.open a{display:block;padding:12px 0;font-size:16px;border-bottom:1px solid var(--border-inverse)}
+  section{scroll-margin-top:118px}
+}
 </style>
 </head>
 <body>
