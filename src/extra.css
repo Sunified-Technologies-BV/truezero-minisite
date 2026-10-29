@@ -68,3 +68,14 @@
 .fly-markets{grid-template-columns:1fr 1fr}
 @media(min-width:1000px){.fly-img{position:sticky;top:84px}}
 @media(max-width:640px){.fly-markets{grid-template-columns:1fr}}
+.logo-plate{display:block;background:#fff;border-radius:8px;padding:10px 14px;width:fit-content;max-width:100%}
+.logo-plate img{display:block;height:44px;width:auto}
+.mk-logo{display:block;margin-top:8px}
+.mk-logo img{display:block;height:30px;width:auto}
+.card-video{box-shadow:none;border:1px solid var(--border-inverse)}
+.pull{margin:4px 0 0;padding:0 0 0 14px;border-left:3px solid var(--sun-orange)}
+.pull p{font-size:15px;line-height:1.45;color:var(--linen);margin:0 0 8px}
+.pull footer{font-size:12.5px;line-height:1.5;color:rgba(252,248,234,.62)}
+.pull footer a{color:var(--sun-orange);text-decoration:underline;text-underline-offset:2px}
+.pcard a.lnk+a.lnk{margin-top:0}
+.pull footer{background:none;padding:0;border:0;margin:0;color:rgba(252,248,234,.62)}
