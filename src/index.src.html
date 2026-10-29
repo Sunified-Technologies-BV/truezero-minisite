@@ -333,6 +333,12 @@ footer a{color:var(--linen)}
 .pull footer a{color:var(--sun-orange);text-decoration:underline;text-underline-offset:2px}
 .pcard a.lnk+a.lnk{margin-top:0}
 .pull footer{background:none;padding:0;border:0;margin:0;color:rgba(252,248,234,.62)}
+.logo-row{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch}
+.logo-row .logo-plate{display:flex;align-items:center}
+.trl a.pilot{flex:1.6;height:30px;border-radius:4px;display:grid;place-items:center;font-size:12px;font-weight:600;text-decoration:none;box-shadow:0 0 0 2px var(--green-pop),0 0 12px rgba(215,253,0,.55)}
+.trl a.pilot:hover{box-shadow:0 0 0 2px var(--green-pop),0 0 18px rgba(215,253,0,.8);transform:translateY(-1px)}
+.pcard .small a{color:var(--sun-orange);text-decoration:underline;text-underline-offset:2px}
+.trl a.pilot{background:var(--sun-orange);color:var(--sun-blue)}
 </style>
 </head>
 <body>
@@ -537,11 +543,10 @@ footer a{color:var(--linen)}
     <div class="pgrid">
       <div class="pcard">
         <div class="lbl">R&amp;D consortium</div>
-        <a class="logo-plate" href="https://denyse.org/" target="_blank" rel="noopener" aria-label="DENYSE, Sharing Energy"><img src="media/denyse-logo.png" alt="DENYSE, Sharing Energy" loading="lazy"></a>
-        <h3>DENYSE.org</h3>
+        <div class="logo-row"><a class="logo-plate" href="https://denyse.org/" target="_blank" rel="noopener" aria-label="DENYSE, Sharing Energy"><img src="media/denyse-logo.png" alt="DENYSE, Sharing Energy" loading="lazy"></a><a class="logo-plate" href="https://cacip.it/en/about-us/" target="_blank" rel="noopener" aria-label="CACIP, Consorzio Industriale Provinciale di Cagliari"><img src="media/cacip-logo.png" alt="CACIP, Consorzio Industriale Provinciale di Cagliari" loading="lazy"></a></div>
         <p>Eurostars R&amp;D consortium of <a href="https://www.bausch.eu/" target="_blank" rel="noopener">Bausch Datacom</a>, <a href="https://www.sunified.com/" target="_blank" rel="noopener">Sunified</a>, <a href="https://hypha.energy/" target="_blank" rel="noopener">Value-X (now Hypha Energy)</a>, <a href="https://chaintegrator.com/" target="_blank" rel="noopener">Zaisan (now Chaintegrator)</a> and <a href="https://www.rittec.de/" target="_blank" rel="noopener">RITTEC</a>, for financing, owning and sharing renewable energy.<sup class="ref"><a href="#r9">9</a></sup> Sunified brings the solar hardware and the trusted data.</p>
-        <div class="trl" aria-label="Pathway to TRL 7 and 8"><span class="on">Pilots</span><span class="goal">TRL 7</span><span class="goal">TRL 8</span></div>
-        <p class="small">Pathway: consortium pilots, then TRL 7 and 8 with partners.</p>
+        <div class="trl" aria-label="Pathway to TRL 7 and 8"><a class="on pilot" href="https://cacip.it/en/about-us/" target="_blank" rel="noopener" title="CACIP, Cagliari, Sardinia: the Stage 1 pilot site">Pilots · CACIP Sardinia ↗</a><span class="goal">TRL 7</span><span class="goal">TRL 8</span></div>
+        <p class="small">Pathway: Stage 1 pilot with <a href="https://cacip.it/en/about-us/" target="_blank" rel="noopener">CACIP</a>, the Industrial Consortium of the Province of Cagliari, Sardinia, then TRL 7 and 8 with the consortium partners.</p>
         <a class="lnk" href="https://denyse.org/" target="_blank" rel="noopener">denyse.org ↗</a>
       </div>
       <div class="pcard">

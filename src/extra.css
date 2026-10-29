@@ -79,3 +79,9 @@
 .pull footer a{color:var(--sun-orange);text-decoration:underline;text-underline-offset:2px}
 .pcard a.lnk+a.lnk{margin-top:0}
 .pull footer{background:none;padding:0;border:0;margin:0;color:rgba(252,248,234,.62)}
+.logo-row{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch}
+.logo-row .logo-plate{display:flex;align-items:center}
+.trl a.pilot{flex:1.6;height:30px;border-radius:4px;display:grid;place-items:center;font-size:12px;font-weight:600;text-decoration:none;box-shadow:0 0 0 2px var(--green-pop),0 0 12px rgba(215,253,0,.55)}
+.trl a.pilot:hover{box-shadow:0 0 0 2px var(--green-pop),0 0 18px rgba(215,253,0,.8);transform:translateY(-1px)}
+.pcard .small a{color:var(--sun-orange);text-decoration:underline;text-underline-offset:2px}
+.trl a.pilot{background:var(--sun-orange);color:var(--sun-blue)}
