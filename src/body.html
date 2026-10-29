@@ -216,7 +216,7 @@
       </div>
       <div class="pcard">
         <div class="lbl">Open source · Hedera</div>
-        <h3>Hedera Guardian.</h3>
+        <button class="hg-open" type="button" aria-haspopup="dialog" aria-controls="hg-dialog"><img src="media/hedera-logo.png" alt="" width="36" height="36"><span><b>Hedera Guardian.</b><small>What it is, in one page ↗</small></span></button>
         <div class="video card-video"><video controls preload="metadata" playsinline poster="media/hedera-poster.jpg" aria-label="Wes Geisenberger, Hashgraph, at GBBC Blockchain Central UNGA"><source src="media/hedera-wes-unga-720p.mp4" type="video/mp4">Your browser does not play MP4 video.</video></div>
         <blockquote class="pull"><p>“If I can’t digitally define it, it’s going to be really hard to finance, which means it’s not going to live as collateral.”</p><p>“A serial number for a carbon credit is not different than an asset that we’ve already dealt with in Web3. If it’s on these digital rails, we’re ready from day one.”</p><footer><a href="https://x.com/geisenbergerwes" target="_blank" rel="noopener">Wes Geisenberger</a>, Hashgraph, at GBBC’s Annual Blockchain Central UNGA. Posted by <a href="https://x.com/hedera" target="_blank" rel="noopener">@hedera</a>, 26 October 2026.<sup class="ref"><a href="#r11">11</a></sup> Trusted data + institution-ready standards + secure custody = carbon credits that can serve as collateral.</footer></blockquote>
         <p>Guardian is the open-source policy and dMRV platform our signed readings flow into. The “trusted data” in that equation is what UNITY signs at the panel. On 22 September 2026 a signed test credential minted a certificate on Hedera testnet and a tampered copy was refused.<sup class="ref"><a href="#r3">3</a></sup></p>
@@ -303,6 +303,29 @@
     </ol>
   </div>
 </section>
+
+<dialog id="hg-dialog" class="hg" aria-labelledby="hg-title">
+  <form method="dialog" class="hg-close-form"><button class="hg-close" aria-label="Close">✕</button></form>
+  <div class="hg-head"><img src="media/hedera-logo.png" alt="Hedera" width="56" height="56"><div><div class="eye">Hedera · Sustainability Studio</div><h3 id="hg-title">Hedera Guardian</h3><p class="hg-sub">Open-source studio that turns environmental methodologies into policy-as-code, running on the Hedera network.</p></div></div>
+  <p>Guardian digitises, manages and issues environmental assets such as carbon credits, renewable energy certificates and biodiversity credits, with the Hedera network as the public trust layer. Sunified’s UNITY readings are the signed measurement that feeds it: on 22 September 2026 a signed test credential minted a certificate on Hedera testnet and a tampered copy was refused.</p>
+  <div class="hg-grid">
+    <div><b>Policy Workflow Engine</b><span>Multi-page paper methodologies become automated, code-based workflows.</span></div>
+    <div><b>Digital MRV</b><span>Collects data streams, runs the calculations and manages approvals through structured workflows.</span></div>
+    <div><b>Verifiable Credentials</b><span>W3C-compliant identities and credentials for a fraud-resistant chain of custody.</span></div>
+    <div><b>Immutable audit trail</b><span>Transaction topics and timestamps recorded on the Hedera Consensus Service, so anyone can verify a claim without a central intermediary.</span></div>
+  </div>
+  <div class="hg-links">
+    <a href="https://hedera.com/guardian" target="_blank" rel="noopener">hedera.com/guardian ↗</a>
+    <a href="https://hedera.com/use-cases/sustainability" target="_blank" rel="noopener">Sustainability use cases ↗</a>
+    <a href="https://guardian.hedera.com/docs" target="_blank" rel="noopener">Guardian docs ↗</a>
+    <a href="https://github.com/hashgraph/guardian" target="_blank" rel="noopener">github.com/hashgraph/guardian ↗</a>
+    <a href="https://hedera.com/consensus-service" target="_blank" rel="noopener">Hedera Consensus Service ↗</a>
+  </div>
+  <p class="hg-foot">Sunified Inside: the trusted data under the credit is signed at the panel by the UNITY Chip. Hedera and Guardian are trademarks of their owners.</p>
+</dialog>
+<script>
+(function(){var d=document.getElementById('hg-dialog');if(!d)return;document.querySelectorAll('.hg-open').forEach(function(b){b.addEventListener('click',function(){d.showModal()})});d.addEventListener('click',function(e){if(e.target===d)d.close()});})();
+</script>
 <footer><div class="wrap"><span><b>Sunified Technologies B.V.</b> · Joan Muyskenweg 22, 1096CJ Amsterdam, The Netherlands</span><span><a href="mailto:lg@sunified.com">lg@sunified.com</a> · Energy Trust Infrastructure™</span></div></footer>
 
 <script>
