@@ -424,6 +424,17 @@ body.fly-lock{overflow:hidden}
 .team .lilink span{display:inline;font-size:12px;color:inherit;margin:0}
 .team .lilink:hover{color:var(--sun-orange)}
 .team .lilink .li{flex:none;border-radius:3px;box-shadow:0 0 0 1px rgba(252,248,234,.25)}
+/* Header: menu bar under the logo on laptop widths; pop-down menu kept below 1100px */
+@media(min-width:1100px){
+  nav .wrap{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;align-items:center;height:auto;gap:0 16px;padding-top:12px}
+  nav .logo{grid-column:1;grid-row:1}
+  nav .logo img{height:26px}
+  nav .wrap>div{grid-column:2;grid-row:1}
+  nav ul{grid-column:1 / -1;grid-row:2;justify-content:flex-start;gap:clamp(14px,2vw,30px);border-top:1px solid var(--border-inverse);margin-top:12px;padding:11px 0 12px}
+  nav ul a{font-size:14px;letter-spacing:.01em}
+  html{scroll-padding-top:112px}section{scroll-margin-top:124px}
+  .fly-img{top:120px}
+}
 </style>
 </head>
 <body>
