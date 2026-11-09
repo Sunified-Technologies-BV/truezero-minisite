@@ -247,3 +247,7 @@ section{scroll-margin-top:124px}
   .eye-win{font-size:20px;padding-left:0}
   .eye{flex-wrap:wrap}
 }
+
+/* Keep Winner trophy with the word in deck heading */
+.nowrap-win{white-space:nowrap}
+
