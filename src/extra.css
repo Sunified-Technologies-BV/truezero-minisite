@@ -272,3 +272,33 @@ section{scroll-margin-top:124px}
   .cop31-links ul{grid-template-columns:1fr 1fr;gap:10px}
   .cop31-links{margin-top:26px}
 }
+
+/* Live from COP31 collage (mobile-first) */
+.live-date{
+  margin-top:10px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:var(--tracking-wide);
+  text-transform:uppercase;
+  color:var(--sun-orange);
+  max-width:none
+}
+.live-collage{
+  margin-top:22px;
+  max-width:720px;
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  background:var(--bg-inverse-2);
+  box-shadow:0 20px 40px rgba(0,30,40,.35);
+  border:1px solid var(--border-strong)
+}
+.live-collage video{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1/1;
+  background:#000
+}
+@media(min-width:700px){
+  .live-collage{margin-top:28px}
+}
